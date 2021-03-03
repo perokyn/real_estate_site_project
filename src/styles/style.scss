@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'LatoThin';
+  font-weight: 900;
+  src: local('Lato'), url('./fonts/lato/Lato-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  font-weight: 900;
+  src: local('Lato'), url('./fonts/lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LatoRegular';
+  font-weight: 900;
+  src: local('Lato'), url('./fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  font-weight: 900;
+  src: local('Lato'), url('./fonts/lato/Lato-Light.ttf') format('truetype');
+}
+
+
+.body{
+
+  font-family: LatoThin ;
+
+}
+
+
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+
+
+
+  @mixin inline-animation($duration,$iteration) {
+    $name: inline-#{unique-id()};
+  
+    @keyframes #{$name} {
+      @content;
+    }
+  
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+  }
+
+
+
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: xx-large;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+  h1{
+    font-family: LatoLight, Arial, serif ;
+    
+    @include inline-animation(2s, once) {
+        100% { -webkit-transform: translateX(0%); }
+        0% { -webkit-transform: translateX(100%); }
+     }
+
+  }
+
+
+    h2{
+      font-family: LatoRegular ;
+     color: rgb(101, 238, 119);
+    // @include transform(rotate(30deg));
+
+     @include inline-animation(2s, once) {
+         100% { -webkit-transform: translateX(0%); }
+         0% { -webkit-transform: translateX(-100%); }
+      }
+
+    }
+
+    hr{
+       
+     
+        border-bottom: 1px solid white;
+    }
+}
+
+.header_button{
+position: absolute;
+margin-left: 50%;
+margin-right: 50%;
+top:200px
+
+}
+
