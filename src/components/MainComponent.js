@@ -4,6 +4,7 @@ import NavBar from './Navbar'
 import SearchBar from './SearchBar'
 import Services from './ServiceCards'
 import UserTestimonies from './UserTestimonies'
+import About from './About'
 const Main =()=>{
 
     return(
@@ -12,8 +13,9 @@ const Main =()=>{
 <div>
 <NavBar/>
 <Header/>
+<About/>
 <Services/>
-<UserTestimonies/>
+<UserTestimonies/>sectionTitle
 <SearchBar/>
 
 COntent

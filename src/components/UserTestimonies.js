@@ -24,7 +24,7 @@ id:1,
       src2: <Card body className="text-center">
       <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u2.jpg" alt="Card image cap" />
       <CardBody>
-        <CardTitle tag="h5">Our Sellers</CardTitle>
+        <CardTitle tag="h5">John Wick</CardTitle>
         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
         <CardText>
           <small className="text-muted">Last updated 3 mins ago</small>
@@ -39,7 +39,7 @@ id:1,
     src:  <Card body className="text-center">
     <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
     <CardBody>
-      <CardTitle tag="h5">Our Sellers</CardTitle>
+      <CardTitle tag="h5">Liuna Steff</CardTitle>
       <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
       <CardText>
         <small className="text-muted">Last updated 3 mins ago</small>
@@ -49,7 +49,7 @@ id:1,
   src2: <Card body className="text-center">
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
   <CardBody>
-    <CardTitle tag="h5">Our Sellers</CardTitle>
+    <CardTitle tag="h5">July Mao</CardTitle>
     <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
     <CardText>
       <small className="text-muted">Member since 2020 Marc</small>
@@ -59,6 +59,31 @@ id:1,
    altText: 'Slide 1',
    
 },
+{
+  id:3,
+  src:  <Card body className="text-center">
+  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
+  <CardBody>
+    <CardTitle tag="h5">Camina Drummer</CardTitle>
+    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+    <CardText>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </CardText>
+  </CardBody>
+</Card>,
+src2: <Card body className="text-center">
+<CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
+<CardBody>
+  <CardTitle tag="h5">Mila Lia</CardTitle>
+  <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+  <CardText>
+    <small className="text-muted">Member since 2020 Marc</small>
+  </CardText>
+</CardBody>
+</Card>,
+ altText: 'Slide 1',
+ 
+}
   
 ];
 
@@ -97,6 +122,9 @@ const UserTestimonies = (props) => {
   });
 
   return (
+
+<div>
+<div className='sectionTitle'><p>Our Members</p></div>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -107,6 +135,7 @@ const UserTestimonies = (props) => {
       <CarouselControl direction="prev" directionText="Previous"  onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+    </div>
   );
 }
 
