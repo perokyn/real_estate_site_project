@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import Main from './components/MainComponent';
 import './styles/style.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 class App extends Component {
     render() {
         return (
+            <Router>
             <div className="App">
-              <Main/>
+                <Main />
             </div>
+        </Router>
         );
     }
 }

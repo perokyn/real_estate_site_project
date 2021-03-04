@@ -28,11 +28,11 @@ return(
           </CardTitle>
          
           <CardText >
-            <Row >
-               <Col  className='d-flex justify-content-center'>
+          
+               
                <Button className="  d-none  d-sm-block" color='info' >LEARN MORE</Button>
-               </Col>
-               </Row>
+             
+             
           </CardText>
             
 

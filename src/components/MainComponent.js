@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import Header from './Header'
+import React from 'react';
 import NavBar from './Navbar'
-import SearchBar from './SearchBar'
-import Services from './ServiceCards'
-import UserTestimonies from './UserTestimonies'
-import About from './About'
+import Home from './Home'
+import Footer from './Footer'
+import { Switch, Route, Redirect } from 'react-router-dom';
+
 const Main =()=>{
 
     return(
@@ -12,13 +11,12 @@ const Main =()=>{
 
 <div>
 <NavBar/>
-<Header/>
-<About/>
-<Services/>
-<UserTestimonies/>sectionTitle
-<SearchBar/>
+<Switch> 
+    <Route path='/home' component={Home} />
+<Redirect to='/home' /> 
+</Switch>
+<Footer/>
 
-COntent
 </div>
     )
 }

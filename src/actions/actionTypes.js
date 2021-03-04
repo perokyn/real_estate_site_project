@@ -1,0 +1,4 @@
+export default {
+    GET_PROPERTIES: "GET_POPERTIES",
+    GET_A_PROPERTY: "GET_A_PROPERTY",
+};

@@ -32,7 +32,7 @@ id:1,
       </CardBody>
     </Card>,
        altText: 'Slide 1',
-       
+       caption:'slide1'
   },
   {
     id:2,
@@ -57,7 +57,7 @@ id:1,
   </CardBody>
 </Card>,
    altText: 'Slide 1',
-   
+   caption:'slide1'  
 },
 {
   id:3,
@@ -82,7 +82,7 @@ src2: <Card body className="text-center">
 </CardBody>
 </Card>,
  altText: 'Slide 1',
- 
+ caption:'slide1'
 }
   
 ];
