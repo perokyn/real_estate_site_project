@@ -5,13 +5,13 @@ import {
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
-  Card, CardBody, Button, CardTitle, CardText, CardImg,
+  Card, CardBody,  CardTitle, CardText, CardImg,
 } from 'reactstrap';
 
 const items = [
   {
 id:1,
-  src:  <Card body className="text-center">
+  src:  <Card body className="text-center m-2">
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u1.jpg" alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Veronica Sims</CardTitle>
@@ -21,7 +21,7 @@ id:1,
           </CardText>
         </CardBody>
       </Card>,
-      src2: <Card body className="text-center">
+      src2: <Card body className="text-center m-2">
       <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u2.jpg" alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">John Wick</CardTitle>
@@ -36,7 +36,7 @@ id:1,
   },
   {
     id:2,
-    src:  <Card body className="text-center">
+    src:  <Card body className="text-center m-2">
     <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
     <CardBody>
       <CardTitle tag="h5">Liuna Steff</CardTitle>
@@ -46,7 +46,7 @@ id:1,
       </CardText>
     </CardBody>
   </Card>,
-  src2: <Card body className="text-center">
+  src2: <Card body className="text-center m-2">
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">July Mao</CardTitle>
@@ -61,7 +61,7 @@ id:1,
 },
 {
   id:3,
-  src:  <Card body className="text-center">
+  src:  <Card body className="text-center m-2">
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">Camina Drummer</CardTitle>
@@ -71,7 +71,7 @@ id:1,
     </CardText>
   </CardBody>
 </Card>,
-src2: <Card body className="text-center">
+src2: <Card body className="text-center m-2">
 <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
 <CardBody>
   <CardTitle tag="h5">Mila Lia</CardTitle>
@@ -115,15 +115,16 @@ const UserTestimonies = (props) => {
         onExited={() => setAnimating(false)}
         key={item.id}
       >
-        <div className='d-flex'>{item.src}{item.src2}</div>
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <div className='d-none d-sm-flex'>{item.src}{item.src2}</div>
+        <div className='d-flex d-sm-none'>{item.src}</div>
+        
       </CarouselItem>
     );
   });
 
   return (
 
-<div>
+<div className='m-2'>
 <div className='sectionTitle'><p>Our Members</p></div>
     <Carousel
       activeIndex={activeIndex}

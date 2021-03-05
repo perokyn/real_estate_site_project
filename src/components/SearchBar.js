@@ -1,10 +1,10 @@
 
 import React from 'react';
-
+import { Container} from 'reactstrap';
 const SearchBar=(props)=>{
 
 return(
-    
+    <Container>
     <div className='row p-3'>
 
 <div className='col-12 col-md-4'>
@@ -68,7 +68,7 @@ return(
 
 
 
-
+  </Container>
 )
 
 }

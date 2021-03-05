@@ -1,7 +1,7 @@
 import React  from'react'
 import PorpertyCard from './PorpertyCard'
 
-
+import {Container,  Row, Col } from 'reactstrap';
 
 const PropertyList=props=>{
 
@@ -15,17 +15,18 @@ console.log("data from store",props.propertyData)
 
     return(
 
-<div>
+<Container>
+    <Row>
 {props.propertyData.map(property=>(
-<div key={property.id}>
+<Col xs={12} sm={6} key={property.id}>
 
 <PorpertyCard property={property}/>
- </div>
+ </Col>
 
 ))}
 
-
-</div>
+</Row>
+</Container>
 
     )
 }
