@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,} from 'react';
 
 import { AiOutlineClose, AiOutlineSend } from "react-icons/ai";
 import {
@@ -13,8 +13,9 @@ const ChatComponent = (props) => {
 
 
 
+
     return (
-        <div className='m-1 '>
+        <div  className='m-1' style={{width:'20rem'}}>
             <Card>
                 <CardBody>
                     <CardTitle tag="h5">{props.data.property.description}</CardTitle>
@@ -24,7 +25,7 @@ const ChatComponent = (props) => {
                     <Row className='mb-3'>
 
                         <Col >
-                            <div  className='chat_window'>
+                            <div  className='chat_text_window'>
                                 <Media className='mb-3'>
                                     <Media left >
                                         <Media object style={{ width: '2rem', height: '2rem', margin: 'auto', borderRadius: '50%',marginLeft:'1rem'}} src="/assets/images/u1.jpg" alt="Card image cap" />

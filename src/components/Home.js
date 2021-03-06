@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import Header from './Header'
 import SearchBar from './SearchBar'
 import Services from './ServiceCards'
@@ -10,7 +10,7 @@ import {
      Row, Col
 } from 'reactstrap';
 
-
+import $ from 'jquery'
 import postStore from "../stores/postStore";
 import { getProperties } from "../actions/postActions";
 
@@ -21,10 +21,13 @@ const Home = () => {
 
     const [propertyData, setPropertyData] = useState(postStore.getProperties())
     const [chatWindows, setChatWindows] = useState([])
-
+    const [viewPortSize, setviewPortSize]=useState(window.innerWidth)
 
     useEffect(() => {
-
+        
+        
+    window.addEventListener("resize", () => setviewPortSize(window.innerWidth));
+        
 
         postStore.addChangeListener(onChange);
 
@@ -33,7 +36,6 @@ const Home = () => {
 
 
     })
-
 
     function onChange() {
         setPropertyData(postStore.getProperties());
@@ -67,10 +69,29 @@ const Home = () => {
         setChatWindows(chatWindows.filter(item => item.user.id !== id));
     }
 
-console.log("chatwindows length",chatWindows.length)
 
 
-    if (chatWindows.length > 0) { console.log('State array', chatWindows) }
+
+//get mapped chat window if it is the third that is opened and set its position to absolute (this iswhat should be modifyed in srceens less then sm)
+const chatRef=(props)=>{
+   
+//To DO : Convert this to a switch statement to include more window sizes
+
+if(viewPortSize<=480 && chatWindows.length>1){
+    
+    $(`#${chatWindows[chatWindows.length-1].user.firstName}`).css({position: 'absolute'})
+    console.log('SMALL VIEW')
+}else if(viewPortSize>480 && viewPortSize<=768 && chatWindows.length>2){
+ 
+        $(`#${chatWindows[chatWindows.length-1].user.firstName}`).css({position: 'absolute'})
+    }
+    
+ 
+
+}
+
+
+
 
 
     return (
@@ -86,7 +107,9 @@ console.log("chatwindows length",chatWindows.length)
             <PropertyList onClick={(e) => handOpenNewChat(e)} propertyData={propertyData} />
 COntent
 
-<div className='chat_main_window'>
+
+
+<div className='chat_container'>
     
             {chatWindows && <Row>
 
@@ -95,11 +118,12 @@ COntent
                 </Col>
 
                 <Col className='d-flex'>
-                {chatWindows.map((windows, key) => (
+                {chatWindows.map(windows=> (
 
-                    <div onClick={() => { closeChatWindow(windows.user.id) }} key={key}>
+                    <div id={windows.user.firstName} ref={()=>{chatRef(windows.user.firstName)}} onClick={() => { closeChatWindow(windows.user.id) }} key={windows.user.firstName}>
                         
-                   <ChatComponent data={windows}/>
+                   <ChatComponent setStyle={false}  data={windows}/>
+
                     </div>
 
                 ))}

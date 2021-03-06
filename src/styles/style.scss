@@ -110,7 +110,7 @@ top:200px
 
 
 
-.chat_main_window{
+.chat_container{
 
 background-color: rgb(37, 33, 33);
 border-radius: 10px;
@@ -122,15 +122,9 @@ border-radius: 10px;
   z-index: 10;
 }
 
-.chat_text{
- 
-  padding: 5px;
-  border-radius: 10px;
-  background-color: cornflowerblue;
-  margin-left: 1rem;
-  color:white
-}
-.chat_window{
+
+
+.chat_text_window{
 
   padding-top: 7rem;
   border-style: solid;
@@ -140,6 +134,24 @@ border-radius: 10px;
   display: flex;
   align-items: baseline; 
 }
-.chat_mapped{
+
+.chat_text{
+ 
+  padding: 5px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  margin-left: 1rem;
+  color:white
+}
+
+.chat_window_host{
+  position:relative;
+}
+
+.chatWindow_overlay{
   position:absolute;
+}
+
+.chatWindow_inline{
+  display: block;
 }
