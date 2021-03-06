@@ -3,7 +3,7 @@ import PorpertyCard from './PorpertyCard'
 
 import {Container,  Row, Col } from 'reactstrap';
 
-const PropertyList=props=>{
+const ChatList= props=>{
 
 
 
@@ -31,4 +31,4 @@ console.log("data from store",props.propertyData)
     )
 }
 
-export default PropertyList
+export default ChatList

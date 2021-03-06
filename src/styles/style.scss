@@ -108,3 +108,38 @@ top:200px
 
 }
 
+
+
+.chat_main_window{
+
+background-color: rgb(37, 33, 33);
+border-radius: 10px;
+  position:fixed;
+  display: -moz-grid-line;
+  bottom: 0rem;
+  right: 0rem;
+  padding: 10px;
+  z-index: 10;
+}
+
+.chat_text{
+ 
+  padding: 5px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  margin-left: 1rem;
+  color:white
+}
+.chat_window{
+
+  padding-top: 7rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgb(199, 198, 198);
+  display: flex;
+  align-items: baseline; 
+}
+.chat_mapped{
+  position:absolute;
+}

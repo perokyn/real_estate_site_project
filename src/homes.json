@@ -23,8 +23,8 @@
         },
             "user":{
             "id": 1,
-            "firstName": "Lokesh",
-            "lastName": "Gupta",
+            "firstName": "Drummer",
+            "lastName": "Camina",
             "email": "Gupta@gmail.com",
             "phone":"800 000 000",
             "status": "Active",
@@ -70,6 +70,43 @@
        }
 
       }
+
+},
+
+{
+  "id": 3,
+   "property": {
+    "id": 3,
+    "address": {
+      "id": 3,
+      "addressLine1": "1234 7 St",
+      "city": "San Diego",
+      "state": "California",
+      "zip": "92103"
+    },
+
+      "data":{
+      "propertyType": "SingleFamilyHome",
+      "squareFeet": 2000,
+      "numberBedrooms": 4,
+      "numberBaths": 3,
+      "description": "Beautiful country home",
+      "status": "Pending",
+      "price": 249999,
+      "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+    },
+        "user":{
+        "id": 3,
+        "firstName": "Ellen",
+        "lastName": "Ripley",
+        "email": "Gupta@gmail.com",
+        "phone":"800 000 000",
+        "status": "Active",
+        "licenseNumber": "123456789",
+        "licenseState": "California"
+     }
+
+    }
 
 }
 

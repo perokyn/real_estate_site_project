@@ -27,7 +27,8 @@ const PorpertyCard = (props) => {
                                     <Media left >
                                         <Media object style={{ width: '5rem', height: '5rem', margin: 'auto', borderRadius: '50%' }} src="/assets/images/u1.jpg" alt="Card image cap" />
                                         <Media>Veronica Sims</Media>
-                                        <Media style={{fontSize:'2rem'}}><AiOutlineMessage className='mr-2'/> < AiOutlineMail className='ml-2'/></Media>
+                                        <Media style={{fontSize:'2rem'}}><AiOutlineMessage  id={props.property.property.id} onClick={e=>{props.onClick(e)}}style={{marginRight:".5rem", cursor:'pointer'}}/> 
+                                        < AiOutlineMail style={{marginLeft:'.5rem', cursor:'pointer'}}/></Media>
                                         
                                     </Media>
                                     <Media body>
