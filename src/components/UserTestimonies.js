@@ -4,7 +4,6 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
   Card, CardBody,  CardTitle, CardText, CardImg,
 } from 'reactstrap';
 
@@ -17,7 +16,7 @@ id:1,
           <CardTitle tag="h5">Veronica Sims</CardTitle>
           <CardText>"The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement."</CardText>
           <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Member since 2010</small>
           </CardText>
         </CardBody>
       </Card>,
@@ -25,9 +24,9 @@ id:1,
       <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u2.jpg" alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">John Wick</CardTitle>
-        <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+        <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
         <CardText>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Member since 2010</small>
         </CardText>
       </CardBody>
     </Card>,
@@ -40,9 +39,9 @@ id:1,
     <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
     <CardBody>
       <CardTitle tag="h5">Liuna Steff</CardTitle>
-      <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+      <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
       <CardText>
-        <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted">Member since 2010</small>
       </CardText>
     </CardBody>
   </Card>,
@@ -50,7 +49,7 @@ id:1,
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">July Mao</CardTitle>
-    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+    <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
     <CardText>
       <small className="text-muted">Member since 2020 Marc</small>
     </CardText>
@@ -65,9 +64,9 @@ id:1,
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">Camina Drummer</CardTitle>
-    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+    <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
     <CardText>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <small className="text-muted">Member since 2010</small>
     </CardText>
   </CardBody>
 </Card>,
@@ -75,7 +74,7 @@ src2: <Card body className="text-center m-2">
 <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
 <CardBody>
   <CardTitle tag="h5">Mila Lia</CardTitle>
-  <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+  <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
   <CardText>
     <small className="text-muted">Member since 2020 Marc</small>
   </CardText>
