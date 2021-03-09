@@ -3,17 +3,26 @@ import { Card, CardBody, Button, CardTitle, CardText, CardImg, Row, Col, Media,C
 import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { BiBath, BiBed, BiDollarCircle } from "react-icons/bi";
 import {ShareModule} from './ShareModule'
+import { Link, useHistory } from "react-router-dom"
 const PorpertyCard = (props) => {
+
+
+    const history = useHistory()
+    const handleClick = () => {
+
+        history.push(`/property/${props.property.id}`)
+      console.log('Clicked with id:', props.property.id)
+    }
 
 
     return (
         <div>
 
             <Card  >
-                
-                <CardImg top width="100%" src={props.property.property.data.ImageUrl} />
+                                <div onClick={handleClick}>
+                <CardImg   top width="100%" src={props.property.property.data.ImageUrl}  />
                 <CardImgOverlay><ShareModule/></CardImgOverlay>
-                
+                </div>
                 <CardBody >
                     <CardTitle tag="h5">{props.property.property.data.propertyType}</CardTitle>
                     <CardText className='text-muted'>{props.property.property.address.city}   {props.property.property.address.addressLine1}  CA</CardText>
