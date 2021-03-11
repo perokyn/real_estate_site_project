@@ -187,7 +187,7 @@ const slides = items.map((item) => {
 
   return (
 
-<Container fluid className='mt-5'>
+<Container  className='mt-5'>
 <div className='sectionTitle mt-5'><p>Property</p></div>
     <Carousel
       activeIndex={activeIndex}
@@ -214,16 +214,15 @@ const slides = items.map((item) => {
 
     <div className='sectionTitle mt-5'><p>The Neighbourhood</p></div>
     <Row>
-      <Col>
-      <div style={{position:"relative",textAlign:"left"}}>
-        <div style={{overflow:"hidden",background:"none!important",height:"500px",width:"600px"}}>
-        <iframe title='map' width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      <Col xs={12}>
+     
+        <iframe  title='map' className='iFrame' id="gmap_canvas" 
+        src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+         frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 
         </iframe>
-        </div>
-        </div>
-      </Col>
-      <Col className="overflow-hidden">
+       </Col>
+      <Col xs={12} >
       <SimilarHomeList  propertyData={propertyData} />
       
       </Col>

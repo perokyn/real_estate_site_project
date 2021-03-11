@@ -14,8 +14,8 @@ console.log("data from store",props.propertyData)
 
 
     return(
-<div> 
-    Similar homes
+
+    
 <Container fluid style={{height:'500px',overflowY: "scroll"}}>
     
     <Row>
@@ -29,7 +29,7 @@ console.log("data from store",props.propertyData)
 
 </Row>
 </Container>
-</div>
+
     )
 }
 

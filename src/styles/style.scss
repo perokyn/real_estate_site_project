@@ -1,3 +1,25 @@
+
+$im-media-support: true !default;
+
+@mixin media($conditions...) { 
+  @if ($im-media-support and length($conditions) == 0) or 
+      (not $im-media-support and im-intercepts-static-breakpoint($conditions...)) {
+    @content;
+  } @else if ($im-media-support and length($conditions) > 0) {
+    @media #{unquote(parse-expression(nth($conditions, 1)))} {
+      // Recursive call
+      @include media(slice($conditions, 2)...) {
+        @content;
+      }
+    }    
+  }
+ }
+
+
+
+
+
+
 @font-face {
   font-family: 'LatoThin';
   font-weight: 900;
@@ -155,3 +177,14 @@ border-radius: 10px;
 .chatWindow_inline{
   display: block;
 }
+
+
+//$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+.iFrame{
+  
+  width: 500px;
+
+}
+
+

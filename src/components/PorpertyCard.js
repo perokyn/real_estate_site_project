@@ -19,7 +19,7 @@ const PorpertyCard = (props) => {
         <div>
 
             <Card  >
-                                <div onClick={handleClick}>
+                                <div onClick={handleClick}  style={{cursor:'pointer'}}  >
                 <CardImg   top width="100%" src={props.property.property.data.ImageUrl}  />
                 <CardImgOverlay><ShareModule/></CardImgOverlay>
                 </div>
