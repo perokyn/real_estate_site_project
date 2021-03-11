@@ -223,7 +223,7 @@ const slides = items.map((item) => {
         </iframe>
        </Col>
       <Col xs={12} >
-      <h5 className=' mt-5 text-primary mb-3 ml-3'>Similar homes in the area</h5>
+      <h5 className='sectionTitle mt-5'>Similar homes in the area</h5>
       <SimilarHomeList  propertyData={propertyData} />
       
       </Col>
