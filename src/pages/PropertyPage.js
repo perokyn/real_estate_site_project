@@ -11,7 +11,7 @@ import { getAproperty, getProperties } from "../actions/postActions";
 import Gallery from 'react-grid-gallery';
 import Container from 'reactstrap/lib/Container';
 import SimilarHomeList from '../components/SimilarHomeList'
-
+import ContactForm from '../components/ContactForm'
 
 const images=[
   {
@@ -212,19 +212,26 @@ const slides = items.map((item) => {
 </Col>
     </Row>
 
-    <div className='sectionTitle mt-5'><p>The Neighbourhood</p></div>
+    <div className='sectionTitle mt-5'><p>The Neighborhood</p></div>
     <Row>
       <Col xs={12}>
      
         <iframe  title='map' className='iFrame' id="gmap_canvas" 
         src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-         frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+         frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
 
         </iframe>
        </Col>
       <Col xs={12} >
+      <h5 className=' mt-5 text-primary mb-3 ml-3'>Similar homes in the area</h5>
       <SimilarHomeList  propertyData={propertyData} />
       
+      </Col>
+    </Row>
+
+    <Row>
+      <Col>
+      <ContactForm/>
       </Col>
     </Row>
     </Container>
