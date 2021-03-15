@@ -235,7 +235,6 @@ const PropertyPage = ({ match }) => {
       </Row>
     </Container>
 
-
   );
 }
 
