@@ -147,7 +147,6 @@ const PropertyPage = ({ match }) => {
 
 
 
-
   function onChange() {
     setContent(postStore.getAproperty(id));
     setPropertyData(postStore.getProperties());
