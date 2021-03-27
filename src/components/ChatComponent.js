@@ -5,7 +5,7 @@ import {
     Card, CardText, CardBody, CardLink,
     CardTitle, CardSubtitle, FormGroup, Row, Input, Form, Col, Media
 } from 'reactstrap';
-
+import u1 from '../assets/images/u1.jpg'
 
 
 
@@ -18,7 +18,7 @@ const ChatComponent = (props) => {
         <div  className='m-1' style={{width:'20rem'}}>
             <Card>
                 <CardBody>
-                    <CardTitle tag="h5">{props.data.property.description}</CardTitle>
+                    <CardTitle tag="h5">{props.data.property.propertyType}</CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">price: {props.data.property.price}</CardSubtitle>
                
                 <Form>
@@ -28,7 +28,7 @@ const ChatComponent = (props) => {
                             <div  className='chat_text_window'>
                                 <Media className='mb-3'>
                                     <Media left >
-                                        <Media object style={{ width: '2rem', height: '2rem', margin: 'auto', borderRadius: '50%',marginLeft:'1rem'}} src="/assets/images/u1.jpg" alt="Card image cap" />
+                                        <Media object style={{ width: '2rem', height: '2rem', margin: 'auto', borderRadius: '50%',marginLeft:'1rem'}} src={u1} alt="Card image cap" />
 
                                     </Media>
                                     <Media className='chat_text'>How can I help you?</Media>

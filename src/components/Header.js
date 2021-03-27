@@ -30,7 +30,7 @@ return(
           <CardText >
           
                
-               <Button className="  d-none  d-sm-block" color='info' >LEARN MORE</Button>
+               <Button className="  d-none  d-sm-block" color='info' style={{marginLeft:'50%'}} >LEARN MORE</Button>
              
              
           </CardText>

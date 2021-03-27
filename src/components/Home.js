@@ -102,10 +102,11 @@ if(viewPortSize<=480 && chatWindows.length>1){
             <Header />
             <About />
             <Services />
-            <UserTestimonies />sectionTitle
+            <UserTestimonies />
+            <div className='sectionTitle'><p>Find Property</p></div>
             <SearchBar />
             <PropertyList onClick={(e) => handOpenNewChat(e)} propertyData={propertyData} />
-COntent
+
 
 
 

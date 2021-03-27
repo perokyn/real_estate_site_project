@@ -194,7 +194,8 @@ const PropertyPage = ({ match }) => {
   return (
 
     <Container className='mt-5'>
-      <div className='sectionTitle mt-5'><p>Property</p></div>
+     
+      <div className='sectionTitle mt-5'><p style={{marginTop:'6rem'}}>Property</p></div>
       <Carousel
         activeIndex={activeIndex}
         next={next}

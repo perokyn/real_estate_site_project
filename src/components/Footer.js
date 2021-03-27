@@ -4,7 +4,7 @@ import logo from '../assets/images/logo_mono.png'
 
 function Footer(props) {
     return (
-        <footer className="site-footer">
+        <footer className="site-footer" style={{marginTop:"6rem"}}>
             <div className="container">
                 <div className="row">  
                 <div className='col'>
