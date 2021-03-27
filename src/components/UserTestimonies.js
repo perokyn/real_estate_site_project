@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import u1 from '../assets/images/u1.jpg'
+import u2 from '../assets/images/u2.jpg'
+import u3 from '../assets/images/u3.jpg'
+import u4 from '../assets/images/u4.jpg'
 import {
   Carousel,
   CarouselItem,
@@ -11,7 +15,7 @@ const items = [
   {
 id:1,
   src:  <Card body className="text-center m-2">
-        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u1.jpg" alt="Card image cap" />
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u1} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Veronica Sims</CardTitle>
           <CardText>"The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement."</CardText>
@@ -21,7 +25,7 @@ id:1,
         </CardBody>
       </Card>,
       src2: <Card body className="text-center m-2">
-      <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u2.jpg" alt="Card image cap" />
+      <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u2} alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">John Wick</CardTitle>
         <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
@@ -36,7 +40,7 @@ id:1,
   {
     id:2,
     src:  <Card body className="text-center m-2">
-    <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
+    <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u3} alt="Card image cap" />
     <CardBody>
       <CardTitle tag="h5">Liuna Steff</CardTitle>
       <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
@@ -46,7 +50,7 @@ id:1,
     </CardBody>
   </Card>,
   src2: <Card body className="text-center m-2">
-  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
+  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">July Mao</CardTitle>
     <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
@@ -61,7 +65,7 @@ id:1,
 {
   id:3,
   src:  <Card body className="text-center m-2">
-  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u3.jpg" alt="Card image cap" />
+  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u3} alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">Camina Drummer</CardTitle>
     <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
@@ -71,7 +75,7 @@ id:1,
   </CardBody>
 </Card>,
 src2: <Card body className="text-center m-2">
-<CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src="/assets/images/u4.jpg" alt="Card image cap" />
+<CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
 <CardBody>
   <CardTitle tag="h5">Mila Lia</CardTitle>
   <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>

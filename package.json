@@ -2,6 +2,8 @@
   "name": "realestate_reboot",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
+  "homepage": "https://www.attilawolf.ino/realestate",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@testing-library/jest-dom": "^5.11.4",

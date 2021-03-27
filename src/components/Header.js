@@ -1,4 +1,5 @@
 import React from 'react';
+import header from '../assets/images/h1.jpeg'
 import { Card, 
     CardImgOverlay , 
     CardImg, 
@@ -16,7 +17,7 @@ return(
 <div className='mt-5' >
 <Card  >
 
-<CardImg src="/assets/images/h1.jpeg" alt='people with house key'  />
+<CardImg src={header} alt='people with house key'  />
 
 <CardImgOverlay>
 

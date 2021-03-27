@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo_mono.png'
 
 function Footer(props) {
     return (
@@ -7,7 +8,7 @@ function Footer(props) {
             <div className="container">
                 <div className="row">  
                 <div className='col'>
-                <Link to='/'><img alt='logo' src='/assets/images/logo_mono.png' style={{width:'3rem'}}></img></Link>
+                <Link to='/'><img alt='logo' src={logo} style={{width:'3rem'}}></img></Link>
                     
                     <small className="text-muted ">GetADeal</small>
                     </div>           

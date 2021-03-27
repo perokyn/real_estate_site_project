@@ -4,6 +4,7 @@ import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { BiBath, BiBed, BiDollarCircle } from "react-icons/bi";
 import {ShareModule} from './ShareModule'
 import { Link, useHistory } from "react-router-dom"
+import u3 from '../assets/images/u3.jpg'
 const PorpertyCard = (props) => {
 
 
@@ -48,7 +49,7 @@ const PorpertyCard = (props) => {
                             <Media>
                                 <Media className='d-flex'>
                                     <Media left >
-                                        <Media object style={{ width: '5rem', height: '5rem', margin: 'auto', borderRadius: '50%' }} src="/assets/images/u1.jpg" alt="Card image cap" />
+                                        <Media object style={{ width: '5rem', height: '5rem', margin: 'auto', borderRadius: '50%' }} src={u3} alt="Card image cap" />
                                         <Media>{props.property.property.user.firstName} {props.property.property.user.lastName}</Media>
                                         <Media style={{ fontSize: '2rem' }}><AiOutlineMessage id={props.property.property.id} onClick={e => { props.onClick(e) }} style={{ marginRight: ".5rem", cursor: 'pointer' }} />
                                             < AiOutlineMail style={{ marginLeft: '.5rem', cursor: 'pointer' }} /></Media>

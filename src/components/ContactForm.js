@@ -5,6 +5,7 @@ import {
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
+import u1 from '../assets/images/u1.jpg'
 const Example = (props) => {
     return (
         <Card className='mt-5 mb-5 pb-5'>
@@ -23,7 +24,7 @@ const Example = (props) => {
 </div>
                         <Card>
 
-                            <CardImg top style={{ width: '12rem', height: '12rem', margin: 'auto', borderRadius: '50%' }} src="/assets/images/u1.jpg" alt="Card image cap" />
+                            <CardImg top style={{ width: '12rem', height: '12rem', margin: 'auto', borderRadius: '50%' }} src={u1} alt="Card image cap" />
                             <CardBody>
                                 <CardTitle tag="h5">Card title</CardTitle>
                                 <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
@@ -86,8 +87,7 @@ const Example = (props) => {
                                         <Label htmlFor="exampleFile">File</Label>
                                         <Input type="file" name="file" id="exampleFile" />
                                         <FormText color="muted">
-                                            This is some placeholder block-level help text htmlFor the above input.
-                                            It's a bit lighter and easily wraps to a new line.
+                                            Please upload your offer file in pdf or word format.
                                         </FormText>
                                     </FormGroup>
                                     <FormGroup>

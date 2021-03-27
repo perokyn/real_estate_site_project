@@ -13,10 +13,18 @@ import Container from 'reactstrap/lib/Container';
 import SimilarHomeList from '../components/SimilarHomeList'
 import ContactForm from '../components/ContactForm'
 
+
+import p1 from '../assets/images/properties/p1.jpg'
+import p2 from '../assets/images/properties/p2.jpg'
+import p3 from '../assets/images/properties/p3.jpg'
+import p4 from '../assets/images/properties/p4.jpg'
+
+
+//console.log("image", p1)
 const images = [
   {
-    src: "/assets/images/properties/p1.jpg",
-    thumbnail: "/assets/images/properties/p1.jpg",
+    src: p1.toString(),
+    thumbnail: p1.toString(),
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     enableImageSelection: false,
@@ -24,8 +32,8 @@ const images = [
     caption: "Beautiful family House"
   },
   {
-    src: "/assets/images/properties/p2.jpg",
-    thumbnail: "/assets/images/properties/p2.jpg",
+    src: p2.toString(),
+    thumbnail: p2.toString(),
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     enableImageSelection: false,
@@ -33,8 +41,8 @@ const images = [
     caption: "Beautiful family House"
   },
   {
-    src: "/assets/images/properties/p3.jpg",
-    thumbnail: "/assets/images/properties/p3.jpg",
+    src: p3.toString(),
+    thumbnail:p3.toString(),
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     enableImageSelection: false,
@@ -43,8 +51,8 @@ const images = [
   },
 
   {
-    src: "/assets/images/properties/p4.jpg",
-    thumbnail: "/assets/images/properties/p4.jpg",
+    src: p4.toString(),
+    thumbnail: p4.toString(),
     thumbnailWidth: 320,
     thumbnailHeight: 174,
     enableImageSelection: false,
@@ -58,7 +66,7 @@ const items = [
   {
     id: 1,
     src: <Card body className="text-center m-2">
-      <CardImg top width="100%" src="/assets/images/properties/p1.jpg" alt="Card image cap" />
+      <CardImg top width="100%" src={p1} alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">3 Bedroom Family house</CardTitle>
         <CardText>Built 2016, remodeled, kitchen and bathroom.</CardText>
@@ -74,7 +82,7 @@ const items = [
   {
     id: 2,
     src: <Card body className="text-center m-2">
-      <CardImg top width="100%" src="/assets/images/properties/p2.jpg" alt="Card image cap" />
+      <CardImg top width="100%" src={p2} alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">Spacious Bathroom</CardTitle>
         <CardText> Bathroom with handcraft tiles and customized shower.</CardText>
@@ -90,7 +98,7 @@ const items = [
   {
     id: 3,
     src: <Card body className="text-center m-2">
-      <CardImg top width="100%" src="/assets/images/properties/p3.jpg" alt="Card image cap" />
+      <CardImg top width="100%" src={p3} alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">Executive style bedroom</CardTitle>
         <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
@@ -106,7 +114,7 @@ const items = [
   {
     id: 4,
     src: <Card body className="text-center m-2">
-      <CardImg top width="100%" src="/assets/images/properties/p4.jpg" alt="Card image cap" />
+      <CardImg top width="100%" src={p4} alt="Card image cap" />
       <CardBody>
         <CardTitle tag="h5">Livingroom with full of sunshine</CardTitle>
         <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>

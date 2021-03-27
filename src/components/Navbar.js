@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/images/logo.png'
 import {
   Collapse,
   Navbar,
@@ -23,7 +24,7 @@ const NavBar = (props) => {
     <div className='fixed-top'>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/" className='d-flex align-items-center'>
-        <img  alt='get a deal company logo'src='/assets/images/logo.png' style={{ width: '3rem', height: '3rem' }}></img>
+        <img  alt='get a deal company logo'src={logo} style={{ width: '3rem', height: '3rem' }}></img>
         <small className="text-muted ">GetADeal</small>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
