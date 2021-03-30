@@ -190,7 +190,6 @@ const PropertyPage = ({ match }) => {
     );
   });
 
-
   return (
 
     <Container className='mt-5'>
