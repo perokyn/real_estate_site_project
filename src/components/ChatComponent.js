@@ -11,9 +11,6 @@ import u1 from '../assets/images/u1.jpg'
 
 const ChatComponent = (props) => {
 
-
-
-
     return (
         <div  className='m-1' style={{width:'20rem'}}>
             <Card>
