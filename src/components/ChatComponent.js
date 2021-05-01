@@ -14,6 +14,12 @@ const ChatComponent = (props) => {
     return (
         <div  className='m-1' style={{width:'20rem'}}>
             <Card>
+                <CardText className="bg-secondary text-sm-right pt-2 pb-2 pr-3 text-white rounded-top">
+                    <i class="fa fa-window-minimize pr-3" aria-hidden="true"></i>
+                    <i class="fa fa-window-close pr-2" aria-hidden="true"
+                    onClick={props.close}
+                    ></i>
+                       </CardText>
                 <CardBody>
                     <CardTitle tag="h5">{props.data.property.propertyType}</CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">price: {props.data.property.price}</CardSubtitle>

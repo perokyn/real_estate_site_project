@@ -24,7 +24,7 @@ return<>
             quote={`Hi there! Check out this property: ${props.link}`}
             className="  m-1 "
           >
-            <FacebookIcon size={32} round className='border border-transparent rounded-xl hover:border-gray-400' />
+            <FacebookIcon size={32} round className=' hover:border-gray-400' />
           </FacebookShareButton>
 
 
@@ -33,7 +33,7 @@ return<>
             quote={'titleThe thing you will share'}
             className=" m-1"
           >
-            <TwitterIcon size={32} round  className='border border-transparent rounded-xl hover:border-gray-400'/>
+            <TwitterIcon size={32} round  className=' hover:border-gray-400'/>
           </TwitterShareButton>
 
           < RedditShareButton
@@ -41,7 +41,7 @@ return<>
             quote={'titleThe thing you will share'}
             className=" m-1"
           >
-            <RedditIcon size={32} round  className='border border-transparent rounded-xl hover:border-gray-400'/>
+            <RedditIcon size={32} round  className=' hover:border-gray-400'/>
           </RedditShareButton>
 
           < EmailShareButton
@@ -49,7 +49,7 @@ return<>
             quote={'titleThe thing you will share'}
             className=" m-1"
           >
-            <EmailIcon size={32} round  className='border border-transparent rounded-xl hover:border-gray-400'/>
+            <EmailIcon size={32} round  className=' hover:border-gray-400'/>
           </EmailShareButton>
 
 

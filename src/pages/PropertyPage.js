@@ -12,12 +12,13 @@ import Gallery from 'react-grid-gallery';
 import Container from 'reactstrap/lib/Container';
 import SimilarHomeList from '../components/SimilarHomeList'
 import ContactForm from '../components/ContactForm'
-
+import Ratings from "../components/Ratings"
 
 import p1 from '../assets/images/properties/p1.jpg'
 import p2 from '../assets/images/properties/p2.jpg'
 import p3 from '../assets/images/properties/p3.jpg'
 import p4 from '../assets/images/properties/p4.jpg'
+
 
 
 //console.log("image", p1)
@@ -234,6 +235,15 @@ const PropertyPage = ({ match }) => {
 
         </Col>
       </Row>
+         
+         
+      <Row>
+        <Col>
+          <Ratings />
+        </Col>
+      </Row>
+
+
       <Row>
         <Col>
           <ContactForm />

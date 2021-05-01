@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from './Header'
 import SearchBar from './SearchBar'
 import Services from './ServiceCards'
@@ -7,13 +7,13 @@ import About from './About'
 import PropertyList from './PropertyList'
 import ChatComponent from './ChatComponent'
 import {
-     Row, Col
+    Row, Col, CardText, 
 } from 'reactstrap';
 
 import $ from 'jquery'
 import postStore from "../stores/postStore";
 import { getProperties } from "../actions/postActions";
-
+import u1 from '../assets/images/u1.jpg'
 
 
 
@@ -21,13 +21,13 @@ const Home = () => {
 
     const [propertyData, setPropertyData] = useState(postStore.getProperties())
     const [chatWindows, setChatWindows] = useState([])
-    const [viewPortSize, setviewPortSize]=useState(window.innerWidth)
+    const [viewPortSize, setviewPortSize] = useState(window.innerWidth)
 
     useEffect(() => {
-        
-        
-    window.addEventListener("resize", () => setviewPortSize(window.innerWidth));
-        
+
+
+        window.addEventListener("resize", () => setviewPortSize(window.innerWidth));
+
 
         postStore.addChangeListener(onChange);
 
@@ -72,23 +72,23 @@ const Home = () => {
 
 
 
-//get mapped chat window if it is the third that is opened and set its position to absolute (this iswhat should be modifyed in srceens less then sm)
-const chatRef=(props)=>{
-   
-//To DO : Convert this to a switch statement to include more window sizes
+    //get mapped chat window if it is the third that is opened and set its position to absolute (this iswhat should be modifyed in srceens less then sm)
+    const chatRef = (props) => {
 
-if(viewPortSize<=480 && chatWindows.length>1){
-    
-    $(`#${chatWindows[chatWindows.length-1].user.firstName}`).css({position: 'absolute'})
-    console.log('SMALL VIEW')
-}else if(viewPortSize>480 && viewPortSize<=768 && chatWindows.length>2){
- 
-        $(`#${chatWindows[chatWindows.length-1].user.firstName}`).css({position: 'absolute'})
+        //To DO : Convert this to a switch statement to include more window sizes
+
+        if (viewPortSize <= 480 && chatWindows.length > 1) {
+
+            $(`#${chatWindows[chatWindows.length - 1].user.firstName}`).css({ position: 'absolute' })
+            console.log('SMALL VIEW')
+        } else if (viewPortSize > 480 && viewPortSize <= 768 && chatWindows.length > 2) {
+
+            $(`#${chatWindows[chatWindows.length - 1].user.firstName}`).css({ position: 'absolute' })
+        }
+
+
+
     }
-    
- 
-
-}
 
 
 
@@ -110,26 +110,44 @@ if(viewPortSize<=480 && chatWindows.length>1){
 
 
 
-<div className='chat_container'>
-    
-            {chatWindows && <Row>
+            <div className='chat_container'>
 
-                <Col sm={2}>
-                    fejek
-                </Col>
+                {chatWindows && <Row className="clearfix">
 
-                <Col className='d-flex'>
-                {chatWindows.map(windows=> (
 
-                    <div id={windows.user.firstName} ref={()=>{chatRef(windows.user.firstName)}} onClick={() => { closeChatWindow(windows.user.id) }} key={windows.user.firstName}>
-                        
-                   <ChatComponent setStyle={false}  data={windows}/>
 
-                    </div>
+                    <Col className='d-flex float-left'>
+                        {chatWindows.map(windows => (
 
-                ))}
-</Col>
-            </Row>}
+                            <div id={windows.user.firstName} ref={() => { chatRef(windows.user.firstName) }}  key={windows.user.firstName}>
+
+                                <ChatComponent setStyle={false} data={windows}  close={() => { closeChatWindow(windows.user.id) }}/>
+
+                            </div>
+
+                        ))}
+
+                        <div >
+
+                            {chatWindows.map(windows => (
+                                <div className="p-2 bg-info " key={windows.user.firstName}>
+
+                                    
+                                    <img alt="user1" className="rounded-circle  d-block pt-1" src={u1} width="40" />
+                                    <CardText className="text-white">{windows.user.firstName} </CardText>
+                                    
+
+                                </div>
+
+
+                            ))}
+
+                        </div>
+                    </Col>
+
+
+
+                </Row>}
             </div>
 
         </div>
