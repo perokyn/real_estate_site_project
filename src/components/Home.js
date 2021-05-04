@@ -130,11 +130,11 @@ const Home = () => {
                         <div >
 
                             {chatWindows.map(windows => (
-                                <div className="p-2 bg-info " key={windows.user.firstName}>
+                                <div className="p-2 " key={windows.user.firstName}>
 
                                     
                                     <img alt="user1" className="rounded-circle  d-block pt-1" src={u1} width="40" />
-                                    <CardText className="text-white">{windows.user.firstName} </CardText>
+                                    <CardText className="text-secondary">{windows.user.firstName} </CardText>
                                     
 
                                 </div>

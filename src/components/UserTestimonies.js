@@ -3,6 +3,9 @@ import u1 from '../assets/images/u1.jpg'
 import u2 from '../assets/images/u2.jpg'
 import u3 from '../assets/images/u3.jpg'
 import u4 from '../assets/images/u4.jpg'
+import c1 from '../assets/images/cert.jpg'
+import c2 from '../assets/images/cert2.jpg'
+import c3 from '../assets/images/cert3.png'
 import {
   Carousel,
   CarouselItem,
@@ -15,9 +18,26 @@ const items = [
   {
 id:1,
   src:  <Card body className="text-center m-2">
+         <div className="d-flex">
+          <div>
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u1} alt="Card image cap" />
+        <CardTitle tag="h5">Veronica Sims</CardTitle>
+        </div>
+       <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c1} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Certifyed Agent</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c2} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Customer Engagement</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c3} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Official Sales</small></CardText>
+        </div>
+        </div>
         <CardBody>
-          <CardTitle tag="h5">Veronica Sims</CardTitle>
+       
           <CardText>"The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement."</CardText>
           <CardText>
             <small className="text-muted">Member since 2010</small>
@@ -25,9 +45,23 @@ id:1,
         </CardBody>
       </Card>,
       src2: <Card body className="text-center m-2">
-      <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u2} alt="Card image cap" />
-      <CardBody>
+        <div className="d-flex">
+          <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u2} alt="Card image cap" />
         <CardTitle tag="h5">John Wick</CardTitle>
+        </div>
+       <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c1} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Certifyed Agent</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c2} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Customer Engagement</small></CardText>
+        </div>
+        </div>
+      
+      <CardBody>
+       
         <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
         <CardText>
           <small className="text-muted">Member since 2010</small>
@@ -40,9 +74,22 @@ id:1,
   {
     id:2,
     src:  <Card body className="text-center m-2">
-    <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u3} alt="Card image cap" />
+     <div className="d-flex">
+          <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u1} alt="Card image cap" />
+        <CardTitle tag="h5">Liuna Steff</CardTitle>
+        </div>
+       <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c1} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Certifyed Agent</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c2} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Customer Engagement</small></CardText>
+        </div>
+        </div>
     <CardBody>
-      <CardTitle tag="h5">Liuna Steff</CardTitle>
+
       <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
       <CardText>
         <small className="text-muted">Member since 2010</small>
@@ -50,9 +97,26 @@ id:1,
     </CardBody>
   </Card>,
   src2: <Card body className="text-center m-2">
-  <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
+   <div className="d-flex">
+          <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
+        <CardTitle tag="h5">July Mao</CardTitle>
+        </div>
+       <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c1} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Certifyed Agent</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c2} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Customer Engagement</small></CardText>
+        </div>
+        <div>
+        <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={c3} alt="Card image cap" />   
+        <CardText > <small className="text-muted">Official Sales</small></CardText>
+        </div>
+        </div>
   <CardBody>
-    <CardTitle tag="h5">July Mao</CardTitle>
+
     <CardText>The best service ever. I can directly talk to my buyer and make a fast and reasonable agreement.</CardText>
     <CardText>
       <small className="text-muted">Member since 2020 Marc</small>
