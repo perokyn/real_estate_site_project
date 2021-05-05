@@ -1,57 +1,62 @@
 import React from 'react';
-import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {Card,CardImg, Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import logo from '../assets/images/logo.png'
 
 const Login = (props) => {
   return (
-    <Form>
+    <Card className="p-4">
+      <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={logo} alt="Card image cap" />   
+    <Form >
       <Row form>
-        <Col md={6}>
+        <Col >
           <FormGroup>
             <Label for="exampleEmail">Email</Label>
-            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+            <Input type="email" name="email" id="exampleEmail" placeholder="yourmail@mail.com" />
           </FormGroup>
         </Col>
-        <Col md={6}>
+      </Row>
+      <Row>
+      <Col >
           <FormGroup>
             <Label for="examplePassword">Password</Label>
-            <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+            <Input type="password" name="password" id="examplePassword" placeholder="****" />
           </FormGroup>
         </Col>
       </Row>
-      <FormGroup>
-        <Label for="exampleAddress">Address</Label>
-        <Input type="text" name="address" id="exampleAddress" placeholder="1234 Main St"/>
-      </FormGroup>
-      <FormGroup>
-        <Label for="exampleAddress2">Address 2</Label>
-        <Input type="text" name="address2" id="exampleAddress2" placeholder="Apartment, studio, or floor"/>
-      </FormGroup>
-      <Row form>
-        <Col md={6}>
-          <FormGroup>
-            <Label for="exampleCity">City</Label>
-            <Input type="text" name="city" id="exampleCity"/>
-          </FormGroup>
+      
+     
+     
+        <Row>
+          <Col >
+          <Button className="w-100 bg-success" >Sign in</Button>
         </Col>
-        <Col md={4}>
-          <FormGroup>
-            <Label for="exampleState">State</Label>
-            <Input type="text" name="state" id="exampleState"/>
-          </FormGroup>
-        </Col>
-        <Col md={2}>
-          <FormGroup>
-            <Label for="exampleZip">Zip</Label>
-            <Input type="text" name="zip" id="exampleZip"/>
-          </FormGroup>  
-        </Col>
-      </Row>
-      <FormGroup check>
+        
+        </Row>
+
+          <Row>
+        <Col >
+        <FormGroup check className="pt-3">
         <Input type="checkbox" name="check" id="exampleCheck"/>
-        <Label for="exampleCheck" check>Check me out</Label>
+        <Label for="exampleCheck" check>Remember Me</Label>
       </FormGroup>
-      <Button>Sign in</Button>
+        </Col>
+        </Row>
+        
+      
     </Form>
+    <Row>
+      <Col className=" pt-5 d-flex justify-content-center">
+      <Label for="register" >Not a member?</Label>
+      </Col>
+      
+      </Row>
+      <Row>
+      <Col className=" d-flex justify-content-center ">
+      <a href="#" className="link-primary">Register</a>
+      </Col>
+      
+      </Row>
+    </Card>
   );
 }
 

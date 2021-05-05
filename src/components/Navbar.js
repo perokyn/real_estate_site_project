@@ -26,10 +26,7 @@ const NavBar = (props) => {
 
   return (
     <div className='fixed-top position-relative '>
-{openLogin && <div className="position-absolute bg-secondary p-3 d-flex justify-content-center  ">
-  <Login/>
-     
-      </div>}
+
      
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/" className='d-flex align-items-center'>
@@ -58,7 +55,7 @@ const NavBar = (props) => {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
+                  Vacation
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -66,6 +63,12 @@ const NavBar = (props) => {
           <NavbarText onClick={toggleLogin}>Login </NavbarText>
         </Collapse>
       </Navbar>
+      <div className=" d-flex justify-content-center  ">
+ {openLogin && <div className="position-absolute bg-white p-3 ">
+  <Login/>
+     
+      </div>}
+      </div>
     </div>
   );
 }

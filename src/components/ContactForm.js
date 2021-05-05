@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     Form, FormGroup, Label, Input, FormText, Row, Col, Media,
     Card, CardImg, CardText, CardBody,
@@ -6,7 +6,18 @@ import {
 } from 'reactstrap';
 import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import u1 from '../assets/images/u1.jpg'
+
+
 const Example = (props) => {
+
+    const[rvalue, setrangeValue]=useState(0)
+
+const rangeValue=()=>{
+
+   // console.log("value",document.getElementById('inputRange').value )
+setrangeValue(document.getElementById('inputRange').value )
+
+}    
     return (
         <Card className='mt-5 mb-5 pb-5'>
 
@@ -24,12 +35,35 @@ const Example = (props) => {
 </div>
                         <Card>
 
-                            <CardImg top style={{ width: '12rem', height: '12rem', margin: 'auto', borderRadius: '50%' }} src={u1} alt="Card image cap" />
+                            <CardImg className="mt-5" top style={{ width: '12rem', height: '12rem', margin: 'auto', borderRadius: '50%' }} src={u1} alt="Card image cap" />
                             <CardBody>
-                                <CardTitle tag="h5">Card title</CardTitle>
-                                <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                <Button>Button</Button>
+                                <CardTitle tag="h5">Ellen Ripley</CardTitle>
+                                <CardSubtitle tag="h6" className="mb-2 text-muted">Owner</CardSubtitle>
+                                <CardText>Please get in touch with me with your offer. I am looking forward to make a deal with you.</CardText>
+                                <Row className='text-white p-2 bg-secondary' >
+                        <Col >
+                            <Media body>
+                                <Media  >
+                                    
+                                                                              
+                                     < AiOutlineMail style={{fontSize:'2rem', marginLeft: '.5rem', cursor: 'pointer' }} />
+                                        <Media heading>
+                                            <small>&nbsp;ellen.ripley@wyutani.com</small>
+                                        </Media>
+                                        </Media>
+                                        <Media  >                         
+                                        < AiOutlineMessage style={{fontSize:'2rem', marginLeft: '.5rem', cursor: 'pointer' }} />
+                                        <Media heading>
+                                            <small>&nbsp;direct chat</small>
+                                        </Media>
+                                     
+                                            
+                                        </Media>
+
+                               
+                            </Media>
+                        </Col>
+                    </Row>
                             </CardBody>
                         </Card>
 
@@ -91,8 +125,9 @@ const Example = (props) => {
                                         </FormText>
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label htmlFor="exampleRange">Price range</Label>
-                                        <Input type="range" name="range" id="exampleRange" />
+                                        <Label htmlFor="exampleRange">Your offer: <span className="text-primary">${rvalue}</span>  </Label>
+                                        <Input type="range" name="range" id="inputRange" 
+                                        min="125000" max="450000" onChange={(e)=>rangeValue(e)}/>
                                     </FormGroup>
                                     <FormGroup check>
                                         <Input id="InputType-radio" type="radio" />

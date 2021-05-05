@@ -12,7 +12,7 @@ import {
     
   } from 'react-share';
 
-
+  import logo from '../assets/images/logo.png'
 
 export const ShareModule=(props)=>{
 
@@ -21,7 +21,7 @@ return<>
 <div className='flex justify-around '>
     <FacebookShareButton
             url={'https://www.facebook.com/'}
-            quote={`Hi there! Check out this property: ${props.link}`}
+            quote={`Hi there! Check out this property: Wonderful Family House at getaDeal!`}
             className="  m-1 "
           >
             <FacebookIcon size={32} round className=' hover:border-gray-400' />
