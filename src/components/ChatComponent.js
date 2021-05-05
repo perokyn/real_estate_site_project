@@ -1,5 +1,5 @@
 import React,{useState,} from 'react';
-
+import ChatFunction from './ChatFunction'
 import { AiOutlineClose, AiOutlineSend } from "react-icons/ai";
 import {
     Card, CardText, CardBody, CardLink,
@@ -36,7 +36,7 @@ const ChatComponent = (props) => {
                                     </Media>
                                     <Media className='chat_text'>How can I help you?</Media>
                                 </Media>
-
+                            <ChatFunction/>
                             </div>
                         </Col>
                     </Row>
