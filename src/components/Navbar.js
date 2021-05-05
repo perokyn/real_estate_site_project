@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png'
+import Login from './Login'
 import {
   Collapse,
   Navbar,
@@ -12,16 +13,24 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,
+  Row,
+  Col
 } from 'reactstrap';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [openLogin, setOpenLogin]= useState(false)
   const toggle = () => setIsOpen(!isOpen);
+  const toggleLogin=()=>setOpenLogin(!openLogin)
 
   return (
-    <div className='fixed-top'>
+    <div className='fixed-top position-relative '>
+{openLogin && <div className="position-absolute bg-secondary p-3 d-flex justify-content-center  ">
+  <Login/>
+     
+      </div>}
+     
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/" className='d-flex align-items-center'>
         <img  alt='get a deal company logo'src={logo} style={{ width: '3rem', height: '3rem' }}></img>
@@ -54,7 +63,7 @@ const NavBar = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Login</NavbarText>
+          <NavbarText onClick={toggleLogin}>Login </NavbarText>
         </Collapse>
       </Navbar>
     </div>
