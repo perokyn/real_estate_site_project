@@ -232,15 +232,12 @@ const PropertyPage = ({ match }) => {
 
         </Col>
       </Row>
-         
-         
+      
       <Row>
         <Col>
           <Ratings />
         </Col>
       </Row>
-
-
       <Row>
         <Col>
           <ContactForm />
