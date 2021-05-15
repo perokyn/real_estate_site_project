@@ -147,8 +147,6 @@ const PropertyPage = ({ match }) => {
     if (postStore.getProperties().length === 0) getProperties();
     return () => postStore.removeChangeListener(onChange);
 
-
-
   }, [])
 
 
@@ -247,5 +245,4 @@ const PropertyPage = ({ match }) => {
 
   );
 }
-
 export default PropertyPage;
