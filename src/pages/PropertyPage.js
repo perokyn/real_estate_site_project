@@ -58,7 +58,6 @@ const images = [
     caption: "Beautiful family House"
   },
 
-
 ]
 const items = [
   {
@@ -230,7 +229,6 @@ const PropertyPage = ({ match }) => {
 
         </Col>
       </Row>
-      
       <Row>
         <Col>
           <Ratings />
@@ -242,7 +240,6 @@ const PropertyPage = ({ match }) => {
         </Col>
       </Row>
     </Container>
-
   );
 }
 export default PropertyPage;
