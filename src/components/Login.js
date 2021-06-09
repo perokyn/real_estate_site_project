@@ -1,12 +1,12 @@
 import React from 'react';
-import {Card,CardImg, Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {Card,CardImg,CardText, Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import logo from '../assets/images/logo.png'
 
 const Login = (props) => {
   return (
     <Card className="p-4">
       <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={logo} alt="Card image cap" />   
-    <Form >
+      <CardText>
       <Row form>
         <Col >
           <FormGroup>
@@ -43,7 +43,7 @@ const Login = (props) => {
         </Row>
         
       
-    </Form>
+        </CardText>
     <Row>
       <Col className=" pt-5 d-flex justify-content-center">
       <Label for="register" >Not a member?</Label>
