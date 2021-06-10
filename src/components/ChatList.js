@@ -5,13 +5,7 @@ import {Container,  Row, Col } from 'reactstrap';
 
 const ChatList= props=>{
 
-
-
-
-
 console.log("data from store",props.propertyData)
-
-
 
     return(
 
