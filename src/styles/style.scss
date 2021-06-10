@@ -183,7 +183,7 @@ border-radius: 10px;
 
 .iFrame{
   
-  width:100%;
+width:100%;
 height:500px
 }
 
@@ -280,4 +280,15 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #3071A9;
+}
+
+.iFrameScroll{
+  scrollbar-base-color: #ff0000;
+scrollbar-face-color: #ff8c00;
+scrollbar-track-color: #fff8dc;
+scrollbar-arrow-color: #ffffff;
+scrollbar-highlight-color: #fff8dc;
+scrollbar-shadow-color: #d2691e;
+scrollbar-3dlight-color: #ffebcd;
+scrollbar-darkshadow-color: #8b0000;
 }

@@ -1,0 +1,151 @@
+export const PROPERTIES = [
+    {
+      "id": 1,
+       "property": {
+        "id": 1,
+        "address": {
+          "id": 1,
+          "addressLine1": "1234 7 St",
+          "city": "San Diego",
+          "state": "California",
+          "zip": "92103"
+        },
+
+          "data":{
+          "propertyType": "SingleFamilyHome",
+          "squareFeet": 2000,
+          "numberBedrooms": 4,
+          "numberBaths": 3,
+          "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
+          "status": "Pending",
+          "price": 649999,
+          "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+        },
+            "user":{
+            "id": 1,
+            "firstName": "Drummer",
+            "lastName": "Camina",
+            "email": "Gupta@gmail.com",
+            "phone":"800 000 000",
+            "status": "Active",
+            "licenseNumber": "123456789",
+            "licenseState": "California"
+         }
+
+        }
+  
+},
+
+{
+    "id": 2,
+     "property": {
+      "id": 2,
+      "address": {
+        "id": 2,
+        "addressLine1": "1234 7 St",
+        "city": "San Diego",
+        "state": "California",
+        "zip": "92103"
+      },
+
+        "data":{
+        "propertyType": "SingleFamilyHome",
+        "squareFeet": 2000,
+        "numberBedrooms": 4,
+        "numberBaths": 3,
+        "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
+        "status": "Pending",
+        "price": 649999,
+        "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+      },
+          "user":{
+          "id": 2,
+          "firstName": "Lokesh",
+          "lastName": "Gupta",
+          "email": "Gupta@gmail.com",
+          "phone":"800 000 000",
+          "status": "Active",
+          "licenseNumber": "123456789",
+          "licenseState": "California"
+       }
+
+      }
+
+},
+
+{
+  "id": 3,
+   "property": {
+    "id": 3,
+    "address": {
+      "id": 3,
+      "addressLine1": "1234 7 St",
+      "city": "San Diego",
+      "state": "California",
+      "zip": "92103"
+    },
+
+      "data":{
+      "propertyType": "SingleFamilyHome",
+      "squareFeet": 2000,
+      "numberBedrooms": 4,
+      "numberBaths": 3,
+      "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
+      "status": "Pending",
+      "price": 249999,
+      "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+    },
+        "user":{
+        "id": 3,
+        "firstName": "Ellen",
+        "lastName": "Ripley",
+        "email": "Gupta@gmail.com",
+        "phone":"800 000 000",
+        "status": "Active",
+        "licenseNumber": "123456789",
+        "licenseState": "California"
+     }
+
+    }
+
+},{
+  "id": 4,
+   "property": {
+    "id": 4,
+    "address": {
+      "id": 4,
+      "addressLine1": "1234 7 St",
+      "city": "San Diego",
+      "state": "California",
+      "zip": "92103"
+    },
+
+      "data":{
+      "propertyType": "SingleFamilyHome",
+      "squareFeet": 2000,
+      "numberBedrooms": 4,
+      "numberBaths": 3,
+      "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
+      "status": "Pending",
+      "price": 249999,
+      "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+    },
+        "user":{
+        "id": 4,
+        "firstName": "Liuna",
+        "lastName": "Steff ",
+        "email": "Gupta@gmail.com",
+        "phone":"800 000 000",
+        "status": "Active",
+        "licenseNumber": "123456789",
+        "licenseState": "California"
+     }
+
+    }
+
+}
+
+
+     
+    
+  ]

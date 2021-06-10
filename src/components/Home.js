@@ -7,14 +7,13 @@ import About from './About'
 import PropertyList from './PropertyList'
 import ChatComponent from './ChatComponent'
 import {
-    Row, Col, CardText, 
+  Container,  Row, Col, CardText, 
 } from 'reactstrap';
 
 import $ from 'jquery'
 import postStore from "../stores/postStore";
 import { getProperties } from "../actions/postActions";
 import u1 from '../assets/images/u1.jpg'
-
 
 
 const Home = () => {
