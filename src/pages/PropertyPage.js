@@ -148,7 +148,6 @@ const PropertyPage = ({ match }) => {
 
   }, [])
 
-
   function onChange() {
     setContent(postStore.getAproperty(id));
     setPropertyData(postStore.getProperties());
@@ -179,8 +178,6 @@ const PropertyPage = ({ match }) => {
         key={item.id}
       >
         <div className='d-none d-sm-flex'>{item.src}</div>
-
-
       </CarouselItem>
     );
   });
@@ -188,7 +185,6 @@ const PropertyPage = ({ match }) => {
   return (
 
     <Container className='mt-5'>
-     
       <div className='sectionTitle mt-5'><p style={{marginTop:'6rem'}}>Property</p></div>
       <Carousel
         activeIndex={activeIndex}
