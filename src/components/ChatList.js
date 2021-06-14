@@ -21,8 +21,6 @@ console.log("data from store",props.propertyData)
 
 </Row>
 </Container>
-
     )
 }
-
 export default ChatList
