@@ -27,7 +27,7 @@ const ChatComponent = (props) => {
 
 
                 <CardText >
-                    <iframe width="320" height="400" src="http://www.visualvicinity.com/reactchat/" title="chat" ></iframe>
+                    <iframe width="320" height="400" src="https://attilawolf.info/react_chat/" title="chat"  frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" ></iframe>
 
                 </CardText>
 
