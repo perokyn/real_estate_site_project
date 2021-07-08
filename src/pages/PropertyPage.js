@@ -133,11 +133,9 @@ const PropertyPage = ({ match }) => {
   const [content, setContent] = useState('')
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
   const [propertyData, setPropertyData] = useState(postStore.getProperties())
 
   useEffect(() => {
-
     postStore.addChangeListener(onChange)
 
     getAproperty(id)
@@ -183,7 +181,6 @@ const PropertyPage = ({ match }) => {
   });
 
   return (
-
     <Container className='mt-5'>
       <div className='sectionTitle mt-5'><p style={{marginTop:'6rem'}}>Property</p></div>
       <Carousel
