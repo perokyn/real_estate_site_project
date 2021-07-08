@@ -212,17 +212,14 @@ const PropertyPage = ({ match }) => {
       <div className='sectionTitle mt-5'><p>The Neighborhood</p></div>
       <Row>
         <Col xs={12}>
-
           <iframe title='map' className='iFrame' id="gmap_canvas"
             src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
-
           </iframe>
         </Col>
         <Col xs={12} >
           <h5 className='sectionTitle mt-5'>Similar homes in the area</h5>
           <SimilarHomeList propertyData={propertyData} />
-
         </Col>
       </Row>
       <Row>
