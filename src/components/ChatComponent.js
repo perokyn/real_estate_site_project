@@ -37,8 +37,8 @@ const ChatComponent = (props) => {
 
                 <Row>
                     <Col className="mb-3" >
-                        <CardLink className="p-3" href=""> <small>Save Conversation</small></CardLink>
-                        <CardLink className="p-3" href=""><small>Email Conversation</small></CardLink>
+                        <CardLink className="p-3" href="#"> <small>Save Conversation</small></CardLink>
+                        <CardLink className="p-3" href="#"><small>Email Conversation</small></CardLink>
                     </Col>
                 </Row>
 
