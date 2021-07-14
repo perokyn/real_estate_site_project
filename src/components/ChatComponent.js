@@ -10,7 +10,16 @@ import u1 from '../assets/images/u1.jpg'
 
 
 const ChatComponent = (props) => {
+const[info, setInfo]=useState("")
 
+const shwoInfo=()=>{
+
+    setInfo(` Will download an example html file`)
+}
+const hideInfo=()=>{
+
+    setTimeout(()=>{setInfo('')},2000)
+}
     return (
         <div className='m-1' style={{ width: '20rem' }}>
             <Card>
@@ -37,8 +46,9 @@ const ChatComponent = (props) => {
 
                 <Row>
                     <Col className="mb-3" >
-                        <CardLink className="p-3" href="https://attilawolf.info/projects/realestate"> <small>Save Conversation</small></CardLink>
-                        <CardLink className="p-3" href="https://attilawolf.info/projects/realestate"><small>Email Conversation</small></CardLink>
+                        <CardLink className="p-3" href="data:application/xml;charset=utf-8,example conversation file" download="filename.html" onMouseOver={()=>shwoInfo()} onMouseOut={()=>hideInfo()}><small>Save Conversation</small></CardLink>
+                        <CardLink className="p-3" href="mailto:"><small>Email Conversation</small></CardLink>
+                        <CardText className='pl-3 bg-warning text-muted'>{info} </CardText>
                     </Col>
                 </Row>
 

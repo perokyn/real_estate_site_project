@@ -14,7 +14,9 @@ const Services = (props) => {
         <CardImg  top width="100%"   style={{ width: '7rem', margin:'auto' }}     src={s2} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Our Sellers</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+
+</CardText>
           <CardText>
             <small className="text-muted">All our members are fully insured</small>
           </CardText>
@@ -29,7 +31,7 @@ const Services = (props) => {
         <CardImg top width="100%"   style={{ width: '7rem', margin:'auto' }}   src={s1} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Our Buyers</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </CardText>
           <CardText>
             <small className="text-muted">Direct client conenction</small>
           </CardText>
@@ -42,7 +44,7 @@ const Services = (props) => {
         <CardImg top width="100%"   style={{ width: '7rem', margin:'auto' }}   src={s3} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5">Our Agents</CardTitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <CardText>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </CardText>
           <CardText>
             <small className="text-muted">All our agents are certifyed</small>
           </CardText>
