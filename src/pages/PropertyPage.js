@@ -135,6 +135,7 @@ const PropertyPage = ({ match }) => {
   const [animating, setAnimating] = useState(false);
   const [propertyData, setPropertyData] = useState(postStore.getProperties())
 
+  
   useEffect(() => {
     postStore.addChangeListener(onChange)
 
