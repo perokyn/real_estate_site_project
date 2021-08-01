@@ -6,11 +6,8 @@ const About=(props)=>{
 
     return(
 
-
 <div>
-
 <div className='sectionTitle'>Who We Are</div>
-
 </div>
 
     )
