@@ -17,9 +17,9 @@ import {
 const items = [
   {
 id:1,
-  src:  <Card body className="text-center m-2">
-         <div className="d-flex">
-          <div>
+  src:  <Card body className="text-center m-4 ">
+         <div className="d-flex mx-4 text-right">
+          <div >
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u1} alt="Card image cap" />
         <CardTitle tag="h5">Veronica Sims</CardTitle>
         </div>
@@ -44,8 +44,8 @@ id:1,
           </CardText>
         </CardBody>
       </Card>,
-      src2: <Card body className="text-center m-2">
-        <div className="d-flex">
+      src2: <Card body className="text-center m-4">
+        <div className="d-flex mx-4">
           <div>
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u2} alt="Card image cap" />
         <CardTitle tag="h5">John Wick</CardTitle>
@@ -73,8 +73,8 @@ id:1,
   },
   {
     id:2,
-    src:  <Card body className="text-center m-2">
-     <div className="d-flex">
+    src:  <Card body className="text-center m-4">
+     <div className="d-flex mx-4">
           <div>
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u1} alt="Card image cap" />
         <CardTitle tag="h5">Liuna Steff</CardTitle>
@@ -96,8 +96,8 @@ id:1,
       </CardText>
     </CardBody>
   </Card>,
-  src2: <Card body className="text-center m-2">
-   <div className="d-flex">
+  src2: <Card body className="text-center m-4">
+   <div className="d-flex mx-4">
           <div>
         <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
         <CardTitle tag="h5">July Mao</CardTitle>
@@ -128,7 +128,7 @@ id:1,
 },
 {
   id:3,
-  src:  <Card body className="text-center m-2">
+  src:  <Card body className="text-center m-4">
   <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u3} alt="Card image cap" />
   <CardBody>
     <CardTitle tag="h5">Camina Drummer</CardTitle>
@@ -138,7 +138,7 @@ id:1,
     </CardText>
   </CardBody>
 </Card>,
-src2: <Card body className="text-center m-2">
+src2: <Card body className="text-center m-4">
 <CardImg  top width="100%"   style={{ width: '7rem', height:'7rem',margin:'auto',borderRadius:'50%' }}     src={u4} alt="Card image cap" />
 <CardBody>
   <CardTitle tag="h5">Mila Lia</CardTitle>
@@ -181,6 +181,7 @@ const UserTestimonies = (props) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.id}
+        
       >
         <div className='d-none d-sm-flex'>{item.src}{item.src2}</div>
         <div className='d-flex d-sm-none'>{item.src}</div>
@@ -191,12 +192,13 @@ const UserTestimonies = (props) => {
 
   return (
 
-<div className='m-2'>
+<div className='mx-4'>
 <div className='sectionTitle'><p>Our Members</p></div>
     <Carousel
       activeIndex={activeIndex}
       next={next}
       previous={previous}
+      className='mx-4'
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}

@@ -4,11 +4,11 @@ import s2 from '../assets/images/s2.jpg'
 import s3 from '../assets/images/s3.jpg'
 
 
-import { Card, CardBody, Button, CardTitle, CardText, CardImg, Row, Col } from 'reactstrap';
+import { Card, CardBody,  CardTitle, CardText, CardImg, Row, Col } from 'reactstrap';
 
 const Services = (props) => {
   return (
-    <Row className=' d-block d-sm-flex p-2'>
+    <Row className=' d-block d-sm-flex p-4 mx-4'>
         <Col>
       <Card  >
         <CardImg  top width="100%"   style={{ width: '7rem', margin:'auto' }}     src={s2} alt="Card image cap" />
