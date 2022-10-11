@@ -33,8 +33,8 @@ const hideInfo=()=>{
                 <CardTitle tag="h5" className="pl-3">{props.data.property.propertyType}</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 pl-3 text-muted">price: {props.data.property.price}</CardSubtitle>
 
-                <CardText >
-                    <iframe width="320" height="400" src="https://attilawolf.info/react_chat/" title="chat"  frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" ></iframe>
+                <CardText className='text-center'>
+                    <iframe width="300" height="400" src="https://attilawolf.info/react_chat/" title="chat"  frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" ></iframe>
 
                 </CardText>
 

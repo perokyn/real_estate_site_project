@@ -44,11 +44,8 @@ dispatcher.register((action) => {
         default:
         case actionTypes.GET_A_PROPERTY:
             _poperty = action.property
-
-
             store.emitChange();
             break
-
     }
 });
 

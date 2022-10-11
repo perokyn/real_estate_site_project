@@ -19,7 +19,7 @@ export const PROPERTIES = [
           "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
           "status": "Pending",
           "price": 649999,
-          "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+          "ImageUrl": "https://attilawolf.info/images/realestate/p1.jpg"
         },
             "user":{
             "id": 1,
@@ -56,7 +56,7 @@ export const PROPERTIES = [
         "description": "Beautiful designed 3 bedroom apartment in downtown, San Francisco. Cozy for up to 2-4 people with 3 king sized beds. ",
         "status": "Pending",
         "price": 649999,
-        "ImageUrl": "https://dhp.dreeshomes.com/cms/images/EYrud-a6KJ-Ayt63GXIVxF"
+        "ImageUrl": "https://attilawolf.info/images/realestate/p1.jpg"
       },
           "user":{
           "id": 2,
